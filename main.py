@@ -1,14 +1,11 @@
 import graphs
 import io
 import os
-import glob
 import json
 import numpy
 import cv2
 import pyaudio
 import wave
-import plotly.graph_objects as go
-import sounddevice as sd
 import matplotlib.pyplot as plt
 
 from google.cloud import language_v1
@@ -19,7 +16,7 @@ from google.cloud import speech_v1
 from google.cloud import vision
 from google.cloud.vision import types
 
-credential_path = "HACKRU-726f36ed559e.json"
+credential_path = "CREDENTIALFILENAME.json"
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = credential_path
 clientVision = vision.ImageAnnotatorClient()
 clientSpeech = speech_v1.SpeechClient()
